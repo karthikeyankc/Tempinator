@@ -16,7 +16,7 @@ for file in file_list:
 		except WindowsError:
 			continue
 try:
-	if os.listdir(temp_path) == "":
+	if os.listdir(temp_path) == []:
 		print "Tempinator just terminated all files!"
 	else:
 		print "Some of these files couldn't be removed.\nTry closing any active applications and running it again.\n"
